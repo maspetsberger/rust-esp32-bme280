@@ -23,6 +23,26 @@ Specifically for ESP32-C3:
 
 Note, the Waveshare ESP32-C3 board only has 2MB flash on board. The 1.3.0 release of [espflash](https://github.com/esp-rs/espflash) is not yet compatible with this, but the latest master is.
 
+## Output
+
+```
+> espmonitor /dev/ttyUSB0
+...
+I (290) cpu_start: Starting scheduler.
+starting...
+creating I2C bus...
+I (298) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (308) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+creating BME280...
+initializing BME280...
+starting measurements...
+Relative Humidity = 52.61 %,   Temperature = 23.30 °C,   Pressure = 974.11 hPa
+Relative Humidity = 52.59 %,   Temperature = 23.30 °C,   Pressure = 974.11 hPa
+Relative Humidity = 52.60 %,   Temperature = 23.30 °C,   Pressure = 974.10 hPa
+Relative Humidity = 52.60 %,   Temperature = 23.30 °C,   Pressure = 974.10 hPa
+...
+```
+
 ## Noteworthy
 
 I stumbled over the following issues throughout development:
