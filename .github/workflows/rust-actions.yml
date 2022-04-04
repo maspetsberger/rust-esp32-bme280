@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-results
-          path: ./target/riscv32imc-esp-espidf/release/*
+          path: ./target/riscv32imc-esp-espidf/release/rust-esp32-bme280
